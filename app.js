@@ -48,6 +48,24 @@ function backSpace() {
   }
 }
 
+function square() {
+  if (calculator.displayValue != "0") {
+    calculator.displayValue = Math.sqrt(calculator.displayValue);
+  }
+}
+
+function power() {
+  if (calculator.displayValue != "0") {
+    calculator.displayValue *= calculator.displayValue;
+  }
+}
+
+function pembulatan() {
+  if (calculator.displayValue != "0") {
+    calculator.displayValue = Math.round(calculator.displayValue);
+  }
+}
+
 function handleOperator(nextOperator) {
   const { firstOperand, displayValue, operator } = calculator;
   const inputValue = parseFloat(displayValue);
@@ -124,6 +142,24 @@ keys.addEventListener("click", event => {
 
   if (target.classList.contains("delete")) {
     backSpace(target.value);
+    updateDisplay();
+    return;
+  }
+
+  if (target.classList.contains("square")) {
+    square(target.value);
+    updateDisplay();
+    return;
+  }
+
+  if (target.classList.contains("power")) {
+    power(target.value);
+    updateDisplay();
+    return;
+  }
+
+  if (target.classList.contains("round")) {
+    pembulatan(target.value);
     updateDisplay();
     return;
   }

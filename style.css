@@ -68,24 +68,28 @@ button:focus {
 
 .kurang {
    border-color: #b35255;
-   grid-area: 3 / 4 / 6 / 5;
+   grid-area: 4 / 4 / 6 / 5;
+}
+
+.bagi {
+   grid-area: 2 / 4 / 6 / 5;
 }
 
 .sama-dengan {
    background: linear-gradient(to right, #A3A2FB, #8482FB);
    color: #fff;
    height: 100%;
-   grid-area: 5 / 4 / 6 / 5;
+   grid-area: 6 / 4 / 6 / 5;
 }
 
 .kali {
    border: none;
-   grid-area: 2 / 4 / 6 / 5;
+   grid-area: 3 / 4 / 6 / 5;
 }
 
 .tambah {
    border: none;
-   grid-area: 4 / 4 / 6 / 5;
+   grid-area: 5 / 4 / 6 / 5;
 }
 
 .clear {
@@ -104,4 +108,21 @@ button:focus {
    font-size: 27.5px;
    border: none;
    color: rgb(0, 0, 0);
+}
+
+.extra {
+   background: rgb(243, 244, 245);
+   font-size: 17.5px;
+   height: 35px;
+}
+
+.round {
+   font-size: 12.5px;
+   font-weight: bold;
+}
+
+.square {
+   font-size: 16px;
+   font-weight: bolder;
+   padding-top: 3px;
 }
