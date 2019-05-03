@@ -48,6 +48,16 @@ function backSpace() {
   }
 }
 
+function pi() {
+  if (calculator.displayValue == "0") {
+    calculator.displayValue = 3.14;
+  } else if (calculator.displayValue % 7 == 0) {
+    calculator.displayValue = (calculator.displayValue * 22) / 7;
+  } else if (calculator.displayValue != "0") {
+    calculator.displayValue *= 3.14;
+  }
+}
+
 function square() {
   if (calculator.displayValue != "0") {
     calculator.displayValue = Math.sqrt(calculator.displayValue);
@@ -142,6 +152,12 @@ keys.addEventListener("click", event => {
 
   if (target.classList.contains("delete")) {
     backSpace(target.value);
+    updateDisplay();
+    return;
+  }
+
+  if (target.classList.contains("pi")) {
+    pi(target.value);
     updateDisplay();
     return;
   }
