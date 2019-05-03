@@ -98,6 +98,11 @@ button:focus {
    color: rgb(247, 1, 1);
 }
 
+.clear:hover {
+   background: rgba(247, 1, 1, 0.637);
+   color: #fff;
+}
+
 .plus-minus {
    font-size: 25px;
    border: none;
