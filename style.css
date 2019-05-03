@@ -1,0 +1,107 @@
+html {
+   font-size: 62.5%;
+   box-sizing: border-box;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+.calculator {
+   border: none;
+   border-radius: 10px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 400px;
+   -webkit-box-shadow: 0 0 70px rgba(0, 0, 0, 0.2);
+   box-shadow: 0 0 70px rgba(0, 0, 0, 0.2);
+}
+
+.hasil {
+   width: 100%;
+   font-size: 60px;
+   height: 125px;
+   border: none;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   background: linear-gradient(to right, #A3A2FB, #8482FB);
+   color: #fff;
+   text-align: right;
+   padding-right: 20px;
+   padding-left: 10px;
+}
+
+button {
+   height: 60px;
+   background-color: #fff;
+   border-radius: 40px;
+   border: none;
+   font-size: 25px;
+   cursor: pointer;
+   color: #333;
+}
+
+button:hover {
+   filter: brightness(95%);
+}
+
+button:focus {
+   outline: none;
+}
+
+.tombol {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 20px;
+   padding: 20px;
+}
+
+.perhitungan {
+   font-size: 35px;
+   border: none;
+   color: #8482FB;
+}
+
+.kurang {
+   border-color: #b35255;
+   grid-area: 3 / 4 / 6 / 5;
+}
+
+.sama-dengan {
+   background: linear-gradient(to right, #A3A2FB, #8482FB);
+   color: #fff;
+   height: 100%;
+   grid-area: 5 / 4 / 6 / 5;
+}
+
+.kali {
+   border: none;
+   grid-area: 2 / 4 / 6 / 5;
+}
+
+.tambah {
+   border: none;
+   grid-area: 4 / 4 / 6 / 5;
+}
+
+.clear {
+   font-size: 25px;
+   border: none;
+   color: rgb(247, 1, 1);
+}
+
+.plus-minus {
+   font-size: 25px;
+   border: none;
+   color: rgb(0, 0, 0);
+}
+
+.percent {
+   font-size: 27.5px;
+   border: none;
+   color: rgb(0, 0, 0);
+}
